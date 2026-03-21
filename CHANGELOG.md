@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.0] - 2026-03-21
+
+- Move full wordmark into hero (centered above location line); use compact `vtgms-badge.png` in header (`VTGMS_BADGE.png` in branding, 96px-tall export)
+- Restore modest `--header-h`; add `hero__logo` / `hero__logo-wrap` styles; replace header `.logo__img` with `.logo__badge`
+
 ## [1.4.1] - 2026-03-21
 
 - Enlarge header logo (~3× prior `max-height` / `max-width` clamp); increase `--header-h` to fit

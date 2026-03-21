@@ -1,16 +1,19 @@
 # Logo source files
 
-Full-resolution exports for **Vermont Green Mountain Sanctuary** branding. The live site uses a smaller derivative at `../vtgms-logo.png` (720px wide, generated from `VTGMS_STICKER_COLOR.png`).
+Full-resolution exports for **Vermont Green Mountain Sanctuary** branding.
 
 | File | Role |
 |------|------|
 | `VTGMS_LOGO_FULL_SIZE.png` | Full-size logo (opaque background) |
 | `VTGMS_LOGO_FULL_SIZE_TRANSPARENT.png` | Full-size logo, transparent background |
-| `VTGMS_STICKER_COLOR.png` | Sticker art — **source for `vtgms-logo.png` on the site** |
+| `VTGMS_STICKER_COLOR.png` | Sticker art — **source for `../vtgms-logo.png`** (hero + footer wordmark) |
 | `VTGMS_STICKER.png` | Alternate sticker variant |
+| `VTGMS_BADGE.png` | Horizontal badge — **source for `../vtgms-badge.png`** (header nav) |
 
-Regenerate the web logo after changing the sticker color source:
+Regenerate web derivatives:
 
 ```bash
+cd images/branding
 convert VTGMS_STICKER_COLOR.png -resize 720x -strip ../vtgms-logo.png
+convert VTGMS_BADGE.png -resize x96 -strip ../vtgms-badge.png
 ```
