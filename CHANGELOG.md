@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.8] - 2026-03-21
+
+- Align hero background still (`object-fit: contain`) to the top of the viewport so letterboxing does not appear above the image
+
 ## [1.5.7] - 2026-03-21
 
 - Restore `moss-canopy.jpg` full-bleed image above “An open platform for healing”; remove inline healing-section video player
