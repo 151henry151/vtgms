@@ -17,7 +17,7 @@
   --shadow-card: 0 8px 30px rgba(45, 74, 45, 0.08);
   --radius: 14px;
   --radius-lg: 22px;
-  --header-h: 7.5rem;
+  --header-h: 22.5rem;
 }
 
 *,
@@ -170,13 +170,13 @@ a:hover {
   text-shadow: none;
 }
 
-/* Raster logo (transparent PNG); size for readable wordmark */
+/* Raster logo (transparent PNG); header mark ~3× prior size for readable wordmark */
 .logo__img {
   display: block;
   height: auto;
   width: auto;
-  max-height: clamp(3.75rem, 5vw + 2.75rem, 5.85rem);
-  max-width: min(20rem, 88vw);
+  max-height: clamp(11.25rem, 15vw + 8.25rem, 17.55rem);
+  max-width: min(60rem, 92vw);
   object-fit: contain;
   object-position: left center;
   flex-shrink: 0;

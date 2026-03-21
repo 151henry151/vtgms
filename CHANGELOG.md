@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.1] - 2026-03-21
+
+- Enlarge header logo (~3× prior `max-height` / `max-width` clamp); increase `--header-h` to fit
+
 ## [1.4.0] - 2026-03-21
 
 - Add `images/branding/` with full-resolution logo sources (`VTGMS_LOGO_FULL_SIZE.png`, `VTGMS_LOGO_FULL_SIZE_TRANSPARENT.png`, `VTGMS_STICKER_COLOR.png`, `VTGMS_STICKER.png`) and a short README
