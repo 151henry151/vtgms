@@ -8,7 +8,7 @@ Deploy the contents of this repository (or build output) to the web root for [vt
 
 - `index.html` — main page
 - `styles.css`, `script.js` — assets
-- `images/` — photography and media; `images/branding/` holds full-resolution logo sources (`vtgms-logo.png` = hero/footer wordmark from sticker art; `vtgms-badge.png` = compact header mark)
+- `images/` — photography and media; `images/branding/` holds full-resolution logo sources (`vtgms-logo.png` = hero/footer wordmark from sticker art; `vtgms-badge.png` = optional horizontal compact mark, not used in the fixed header)
 - `admin/`, `api/`, `editor.js` — optional CMS-style helpers (if enabled on the server)
 
 ## License

@@ -4,22 +4,36 @@
   var FORM_INTENT_KEY = "vtgmsFormIntent";
 
   var header = document.querySelector(".site-header");
-  var logo = document.querySelector(".site-header .logo");
   var toggle = document.querySelector(".nav-toggle");
   var navOverlay = document.querySelector(".nav-overlay");
   var heroBg = document.querySelector(".hero__parallax");
 
-  var LOGO_FADE_DISTANCE = 220;
+  var HEADER_FADE_DISTANCE = 220;
+  var mqWideNav = window.matchMedia("(min-width: 1024px)");
 
-  function onScroll() {
+  function updateHeaderScroll() {
     var y = window.scrollY || window.pageYOffset;
-    if (logo) {
-      var t = Math.min(Math.max(y / LOGO_FADE_DISTANCE, 0), 1);
-      var opacity = 1 - t;
-      logo.style.opacity = opacity.toFixed(3);
-      logo.classList.toggle("logo--scrolled-out", t >= 0.98);
-      logo.setAttribute("aria-hidden", t >= 0.98 ? "true" : "false");
+
+    if (mqWideNav.matches) {
+      /* Desktop: fade entire header; reinstate at top */
+      if (header) {
+        var td = Math.min(y / HEADER_FADE_DISTANCE, 1);
+        var ho = 1 - td;
+        header.style.opacity = ho.toFixed(3);
+        header.classList.toggle("site-header--scroll-hidden", ho < 0.04);
+        header.setAttribute("aria-hidden", ho < 0.04 ? "true" : "false");
+        header.style.pointerEvents = ho < 0.04 ? "none" : "";
+      }
+    } else {
+      /* Mobile: keep header + hamburger fully visible */
+      if (header) {
+        header.style.opacity = "";
+        header.classList.remove("site-header--scroll-hidden");
+        header.removeAttribute("aria-hidden");
+        header.style.pointerEvents = "";
+      }
     }
+
     if (heroBg) {
       var max = 400;
       var p = Math.min(y / max, 1);
@@ -27,8 +41,14 @@
     }
   }
 
-  window.addEventListener("scroll", onScroll, { passive: true });
-  onScroll();
+  window.addEventListener("scroll", updateHeaderScroll, { passive: true });
+  window.addEventListener("resize", updateHeaderScroll, { passive: true });
+  if (mqWideNav.addEventListener) {
+    mqWideNav.addEventListener("change", updateHeaderScroll);
+  } else if (mqWideNav.addListener) {
+    mqWideNav.addListener(updateHeaderScroll);
+  }
+  updateHeaderScroll();
 
   function closeNav() {
     if (!navOverlay || !toggle) return;

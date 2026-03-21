@@ -5,6 +5,22 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.4] - 2026-03-21
+
+- Sync `public_html` with repo (`script.js`, `index.html`, `styles.css`) so desktop header scroll fade runs on the live site
+- Add `resize` listener and legacy `MediaQueryList#addListener` fallback; drop desktop `opacity` transition so scroll-linked opacity updates immediately
+
+## [1.5.3] - 2026-03-21
+
+- Remove header badge/logo from the fixed bar; align nav and menu control to the right; move `#top` anchor to the hero section
+- Keep mobile header fully visible on scroll (no badge to fade)
+- Update README and `images/branding/README.md` to describe the badge asset as optional for the header
+
+## [1.5.2] - 2026-03-21
+
+- On viewports ≥1024px, fade the entire fixed header with scroll (same distance as badge fade) and hide it from interaction when fully faded; restore at scroll top
+- Leave mobile scroll behavior unchanged (badge fades; hamburger remains)
+
 ## [1.5.1] - 2026-03-21
 
 - Keep header background transparent at all scroll positions; remove frosted `site-header--solid` styling

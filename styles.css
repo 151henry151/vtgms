@@ -115,42 +115,16 @@ a:hover {
   min-height: var(--header-h);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0.75rem 1.25rem 0.75rem 1.5rem;
   background: transparent;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
-  text-decoration: none;
-  color: var(--color-cream);
-  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
-  transition: opacity 0.2s ease, max-width 0.35s ease, margin 0.35s ease, padding 0.35s ease;
-  max-width: min(14rem, 55vw);
-}
-
-.logo.logo--scrolled-out {
-  max-width: 0 !important;
-  min-width: 0;
-  overflow: hidden;
-  margin: 0 !important;
-  padding: 0 !important;
-  pointer-events: none;
-}
-
-/* Header badge (horizontal mark) */
-.logo__badge {
-  display: block;
-  height: auto;
-  width: auto;
-  max-height: 2.75rem;
-  max-width: min(11rem, 52vw);
-  object-fit: contain;
-  object-position: left center;
-  flex-shrink: 0;
-  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.45));
+@media (min-width: 1024px) {
+  /* Opacity is set from JS on scroll; no transition so it tracks scroll position */
+  .site-header.site-header--scroll-hidden {
+    visibility: hidden;
+  }
 }
 
 /* Full wordmark in hero + footer */
@@ -168,6 +142,11 @@ a:hover {
   max-width: min(58rem, 92vw);
   object-fit: contain;
   filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.45));
+}
+
+.logo.logo--footer {
+  display: inline-block;
+  text-decoration: none;
 }
 
 .logo--footer .logo__img--footer {
@@ -1440,6 +1419,13 @@ a:hover {
 .reveal--pending {
   opacity: 0;
   transform: translateY(22px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
