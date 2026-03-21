@@ -17,7 +17,7 @@
   --shadow-card: 0 8px 30px rgba(45, 74, 45, 0.08);
   --radius: 14px;
   --radius-lg: 22px;
-  --header-h: 4.5rem;
+  --header-h: 7.5rem;
 }
 
 *,
@@ -170,19 +170,27 @@ a:hover {
   text-shadow: none;
 }
 
-.logo__icon {
-  width: 36px;
-  height: 36px;
+/* Raster logo (transparent PNG); size for readable wordmark */
+.logo__img {
+  display: block;
+  height: auto;
+  width: auto;
+  max-height: clamp(3.75rem, 5vw + 2.75rem, 5.85rem);
+  max-width: min(20rem, 88vw);
+  object-fit: contain;
+  object-position: left center;
   flex-shrink: 0;
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.5));
 }
 
-.logo__text {
-  font-family: var(--font-display);
-  font-size: clamp(0.8rem, 1.15vw + 0.65rem, 1.02rem);
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  line-height: 1.2;
-  max-width: min(22rem, calc(100vw - 5.5rem));
+.site-header--solid .logo__img {
+  filter: drop-shadow(0 1px 2px rgba(45, 74, 45, 0.15));
+}
+
+.logo--footer .logo__img--footer {
+  max-height: clamp(5.25rem, 6vw + 3rem, 7.75rem);
+  max-width: min(22rem, 92vw);
+  filter: none;
 }
 
 .nav-desktop {
