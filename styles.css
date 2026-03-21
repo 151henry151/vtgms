@@ -118,43 +118,6 @@ a:hover {
   justify-content: space-between;
   padding: 0.75rem 1.25rem 0.75rem 1.5rem;
   background: transparent;
-  transition: background 0.35s ease, box-shadow 0.35s ease;
-}
-
-.site-header--solid {
-  background: rgba(237, 232, 222, 0.92);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 4px 28px rgba(45, 74, 45, 0.07);
-  border-bottom: 1px solid rgba(45, 74, 45, 0.07);
-}
-
-.site-header--solid .logo__text,
-.site-header--solid .nav-desktop a {
-  color: var(--color-forest);
-  text-shadow: none;
-}
-
-.site-header--solid .nav-desktop a:hover {
-  color: var(--color-moss);
-}
-
-.site-header--solid .nav-cta {
-  background: transparent;
-  color: var(--color-forest) !important;
-  border: 2px solid rgba(139, 94, 60, 0.55);
-  box-shadow: none;
-}
-
-.site-header--solid .nav-cta:hover {
-  background: rgba(139, 94, 60, 0.12);
-  color: var(--color-forest) !important;
-  border-color: var(--color-earth);
-}
-
-.site-header--solid .nav-toggle {
-  color: var(--color-forest);
-  text-shadow: none;
 }
 
 .logo {
@@ -164,10 +127,17 @@ a:hover {
   text-decoration: none;
   color: var(--color-cream);
   text-shadow: 0 1px 12px rgba(0, 0, 0, 0.35);
+  transition: opacity 0.2s ease, max-width 0.35s ease, margin 0.35s ease, padding 0.35s ease;
+  max-width: min(14rem, 55vw);
 }
 
-.site-header--solid .logo {
-  text-shadow: none;
+.logo.logo--scrolled-out {
+  max-width: 0 !important;
+  min-width: 0;
+  overflow: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none;
 }
 
 /* Header badge (horizontal mark) */
@@ -181,10 +151,6 @@ a:hover {
   object-position: left center;
   flex-shrink: 0;
   filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.45));
-}
-
-.site-header--solid .logo__badge {
-  filter: drop-shadow(0 1px 2px rgba(45, 74, 45, 0.12));
 }
 
 /* Full wordmark in hero + footer */
@@ -238,16 +204,8 @@ a:hover {
   text-shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
 }
 
-.site-header--solid .nav-desktop a {
-  text-shadow: none;
-}
-
 .nav-desktop a:hover {
   background: rgba(255, 255, 255, 0.12);
-}
-
-.site-header--solid .nav-desktop a:hover {
-  background: rgba(45, 74, 45, 0.08);
 }
 
 .nav-cta {

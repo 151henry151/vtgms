@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 2026-03-21
+
+- Keep header background transparent at all scroll positions; remove frosted `site-header--solid` styling
+- Fade header badge out with scroll and collapse its width; leave nav + hamburger (mobile shows hamburger alone after fade)
+
 ## [1.5.0] - 2026-03-21
 
 - Move full wordmark into hero (centered above location line); use compact `vtgms-badge.png` in header (`VTGMS_BADGE.png` in branding, 96px-tall export)

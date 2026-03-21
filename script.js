@@ -4,14 +4,21 @@
   var FORM_INTENT_KEY = "vtgmsFormIntent";
 
   var header = document.querySelector(".site-header");
+  var logo = document.querySelector(".site-header .logo");
   var toggle = document.querySelector(".nav-toggle");
   var navOverlay = document.querySelector(".nav-overlay");
   var heroBg = document.querySelector(".hero__parallax");
 
+  var LOGO_FADE_DISTANCE = 220;
+
   function onScroll() {
     var y = window.scrollY || window.pageYOffset;
-    if (header) {
-      header.classList.toggle("site-header--solid", y > 100);
+    if (logo) {
+      var t = Math.min(Math.max(y / LOGO_FADE_DISTANCE, 0), 1);
+      var opacity = 1 - t;
+      logo.style.opacity = opacity.toFixed(3);
+      logo.classList.toggle("logo--scrolled-out", t >= 0.98);
+      logo.setAttribute("aria-hidden", t >= 0.98 ? "true" : "false");
     }
     if (heroBg) {
       var max = 400;
