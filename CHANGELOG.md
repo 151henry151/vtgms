@@ -5,6 +5,11 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.13] - 2026-03-21
+
+- Remove Front Porch Forum copy-ready block from Get Involved; keep text in `docs/front-porch-forum-post.txt`
+- Document `docs/` and optional server `private/` copy in README
+
 ## [1.5.12] - 2026-03-21
 
 - Show `funding-gathering.jpg` at natural aspect ratio in `.funding-photo` (“How We'll Build This Together”); remove max-height crop

@@ -1381,41 +1381,6 @@ a:hover {
   color: var(--color-stone);
 }
 
-.fpf-box {
-  margin-top: 2rem;
-}
-
-.fpf-box h3 {
-  font-family: var(--font-display);
-  color: var(--color-cream);
-  font-size: 1.1rem;
-  margin: 0 0 0.75rem;
-}
-
-.fpf-box textarea {
-  width: 100%;
-  min-height: 220px;
-  padding: 1rem;
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  background: rgba(0, 0, 0, 0.2);
-  color: var(--color-cream);
-  font-family: var(--font-body);
-  font-size: 0.9rem;
-  line-height: 1.55;
-}
-
-.fpf-box .btn--ghost {
-  margin-top: 0.75rem;
-  border-color: rgba(255, 255, 255, 0.5);
-  color: var(--color-cream);
-}
-
-.fpf-box .btn--ghost:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: var(--color-gold);
-}
-
 /* Footer */
 .site-footer {
   background: var(--color-forest);

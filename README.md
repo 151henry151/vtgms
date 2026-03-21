@@ -9,7 +9,10 @@ Deploy the contents of this repository (or build output) to the web root for [vt
 - `index.html` — main page
 - `styles.css`, `script.js` — assets
 - `images/` — photography and media (hero uses `hero-video-frame.jpg`, a still from the walkthrough video; healing section uses `moss-canopy.jpg`); `images/branding/` holds full-resolution logo sources (`vtgms-logo.png` = hero/footer wordmark from sticker art; `vtgms-badge.png` = optional horizontal compact mark, not used in the fixed header)
+- `docs/` — internal reference only (e.g. `front-porch-forum-post.txt` — FPF-style outreach copy not shown on the public site)
 - `admin/`, `api/`, `editor.js` — optional CMS-style helpers (if enabled on the server)
+
+Note: on the production host, a copy of `docs/front-porch-forum-post.txt` may also live under `private/` beside `public_html` (not web-accessible).
 
 ## License
 

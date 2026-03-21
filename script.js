@@ -168,27 +168,4 @@
         encodeURIComponent(body);
     });
   }
-
-  var copyBtn = document.getElementById("copy-fpf");
-  var fpfText = document.getElementById("fpf-text");
-  if (copyBtn && fpfText) {
-    copyBtn.addEventListener("click", function () {
-      fpfText.select();
-      fpfText.setSelectionRange(0, 99999);
-      try {
-        navigator.clipboard.writeText(fpfText.value).then(function () {
-          copyBtn.textContent = "Copied!";
-          setTimeout(function () {
-            copyBtn.textContent = "Copy to clipboard";
-          }, 2000);
-        });
-      } catch (err) {
-        document.execCommand("copy");
-        copyBtn.textContent = "Copied!";
-        setTimeout(function () {
-          copyBtn.textContent = "Copy to clipboard";
-        }, 2000);
-      }
-    });
-  }
 })();
