@@ -12,7 +12,8 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta property="og:title" content="Vermont Green Mountain Sanctuary">
   <meta property="og:description" content="Where food, healing, and community take root in Addison County, Vermont.">
-  <meta property="og:image" content="https://vtgms.org/images/hero-mist.jpg">
+  <meta property="og:image" content="https://vtgms.org/images/hero-video-frame.jpg">
+  <link rel="preload" as="image" href="images/hero-video-frame.jpg">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -49,8 +50,8 @@
   <main id="main">
     <section class="hero" aria-labelledby="hero-title" id="top">
       <div class="hero__media">
-        <div class="hero__parallax">
-          <img src="images/hero-mist.jpg" alt="Layered forest hills in soft morning light and mist" width="1920" height="1280" fetchpriority="high">
+        <div class="hero__bg">
+          <img src="images/hero-video-frame.jpg" alt="" width="1280" height="720" fetchpriority="high" decoding="async">
         </div>
         <div class="hero__overlay" aria-hidden="true"></div>
       </div>
@@ -126,6 +127,17 @@
             <p>Forest bathing and earthing lead inward to the medicine wheel and earth altar — ceremony, stillness, land-tending. Stone from the site when we can.</p>
           </article>
         </div>
+        <div class="zones-gallery reveal" aria-label="Snapshots from the land">
+          <figure class="zones-gallery__item">
+            <img src="images/zones-gallery-1.jpg" alt="Forest path and understory on the sanctuary land" width="1536" height="2048" loading="lazy" decoding="async">
+          </figure>
+          <figure class="zones-gallery__item">
+            <img src="images/zones-gallery-2.jpg" alt="Trees and sky along the trail" width="1536" height="2048" loading="lazy" decoding="async">
+          </figure>
+          <figure class="zones-gallery__item">
+            <img src="images/zones-gallery-3.jpg" alt="Woodland edge and growth" width="1536" height="2048" loading="lazy" decoding="async">
+          </figure>
+        </div>
       </div>
     </section>
 
@@ -179,7 +191,7 @@
               </table>
             </div>
             <div class="food-forest__row">
-              <img src="images/herbs-garden.jpg" alt="Rows of medicinal herbs in a cultivated garden" width="1920" height="1440" loading="lazy">
+              <img src="images/herbs-garden.jpg" alt="Rows of medicinal herbs in a cultivated garden" width="1536" height="2048" loading="lazy">
               <p class="pullquote">“Every plant holds two jobs: healing the body and supporting the ecosystem.”</p>
             </div>
           </div>
@@ -217,7 +229,7 @@
           <img src="images/cob-wall.jpg" alt="Traditional cob wall showing natural earthen building" width="800" height="600" loading="lazy">
         </div>
         <div class="healing-fullbleed reveal">
-          <img src="images/moss-canopy.jpg" alt="Dense green forest canopy with filtered light" width="1920" height="1280" loading="lazy">
+          <img src="images/moss-canopy.jpg" alt="Dense green forest canopy with filtered light" width="1920" height="742" loading="lazy">
         </div>
         <div class="section__inner" style="margin-top:2.5rem">
           <div class="healing-card reveal" style="max-width:52rem;margin:0 auto">
@@ -262,13 +274,16 @@
             <p class="build-card__sourcing">Native seeds and local plant starts — if you have divisions, cuttings, or volunteers from your own garden, they belong here.</p>
           </article>
         </div>
+        <figure class="build-photo reveal">
+          <img src="images/build-salvage.jpg" alt="Salvaged timber and materials for natural building" width="720" height="540" loading="lazy" decoding="async">
+        </figure>
       </div>
     </section>
 
     <section class="section section--cream grain" id="children">
       <div class="section__inner">
         <div class="split-feature reveal">
-          <img src="images/children-mud-kitchen.jpg" alt="Outdoor mud kitchen and nature play area for children" width="1920" height="1440" loading="lazy">
+          <img src="images/children-mud-kitchen.jpg" alt="Outdoor mud kitchen and nature play area for children" width="1536" height="2048" loading="lazy">
           <div>
             <p class="section__eyebrow">Next generations</p>
             <h2>Where Children Learn by Doing</h2>
@@ -281,7 +296,7 @@
 
     <section class="hub" id="hub">
       <div class="hub__bg" aria-hidden="true">
-        <img src="images/timber-barn.jpg" alt="" width="1920" height="1280" loading="lazy">
+        <img src="images/timber-barn.jpg" alt="" width="1536" height="2048" loading="lazy">
       </div>
       <div class="hub__overlay"></div>
       <div class="section__inner hub__inner reveal">
@@ -297,6 +312,9 @@
         <div class="covenant__frame reveal">
           <h2>The Stewardship Agreement</h2>
           <p class="covenant__subtitle">A living covenant between people and place</p>
+          <figure class="covenant-photo">
+            <img src="images/covenant-texture.jpg" alt="Stone and soil at the sanctuary site" width="720" height="960" loading="lazy" decoding="async">
+          </figure>
           <div class="covenant-item">
             <span class="covenant-item__icon" aria-hidden="true">🌿</span>
             <div>
@@ -348,7 +366,7 @@
           <p>Organizations and neighbors doing aligned work in Addison County — conservation, food, building, healing, or plain love of place — we're glad to connect.</p>
         </div>
         <figure class="reveal" style="margin-top:2rem;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-soft)">
-          <img src="images/vermont-green-mountains.jpg" alt="Green mountains and forested slopes in Vermont" width="1920" height="1280" loading="lazy">
+          <img src="images/vermont-green-mountains.jpg" alt="Green mountains and forested slopes in Vermont" width="1920" height="1440" loading="lazy">
         </figure>
       </div>
     </section>
@@ -359,6 +377,9 @@
           <p class="section__eyebrow">Resources</p>
           <h2>How We'll Build This Together</h2>
         </header>
+        <figure class="funding-photo reveal">
+          <img src="images/funding-gathering.jpg" alt="Gathering outdoors on the land" width="720" height="960" loading="lazy" decoding="async">
+        </figure>
         <div class="reveal" style="max-width:52rem;margin:2rem auto 0">
           <p>Community-built first — grants, fundraising, and partnerships as we grow. Financial help welcome; grant-writing and development skills too.</p>
           <p style="font-weight:700;margin-top:1.5rem;color:var(--color-forest)">Programming and land access: <strong>sliding scale always.</strong> Time and hands count.</p>
@@ -480,6 +501,9 @@
           <p class="wishlist-ctas__label">Ready to offer something from the list?</p>
           <a class="btn btn--primary" href="#involved" data-form-intent="materials">I have materials or tools →</a>
         </div>
+        <figure class="wishlist-photo reveal">
+          <img src="images/wishlist-landscape.jpg" alt="Open land and trees in Addison County" width="1536" height="2048" loading="lazy" decoding="async">
+        </figure>
         <div class="wishlist-land reveal" id="wishlist-land">
           <p class="wishlist-land__eyebrow">And above all: land</p>
           <h3 class="wishlist-land__title">This is the ask that makes everything else possible</h3>
@@ -625,5 +649,8 @@ Land leads, building skills, or work-bee energy — I’d love to hear from you.
   <style>
     .visually-hidden { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0; }
   </style>
+</body>
+</html>
+tyle>
 </body>
 </html>

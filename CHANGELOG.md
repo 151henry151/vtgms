@@ -5,6 +5,25 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.7] - 2026-03-21
+
+- Restore `moss-canopy.jpg` full-bleed image above “An open platform for healing”; remove inline healing-section video player
+- Set hero background to a mid-video still frame (`hero-video-frame.jpg`); scale with `object-fit: contain` on a dark field so the full frame fits horizontally without side crop
+- Ignore `images/_backup_photos_2026-03-21/` in git (local backup of prior JPEGs only)
+
+## [1.5.6] - 2026-03-21
+
+- Use static `moss-canopy.jpg` as the hero background; remove scroll parallax on hero and delete looping hero video assets
+- Place `sanctuary-walkthrough.mp4` (with audio) in the healing section with native video controls above “An open platform for healing”
+- Add seven gallery placements from the remaining batch photos (`zones-gallery-*`, `build-salvage`, `covenant-texture`, `funding-gathering`, `wishlist-landscape`)
+
+## [1.5.5] - 2026-03-21
+
+- Add looping muted hero background video (`hero-background.webm` / `.mp4`) with `hero-poster.jpg` fallback and `prefers-reduced-motion` static image
+- Replace section photography with VTGMS photo set; remove unused `hero-mist.jpg` and `healing-mountains.jpg` (copies remain under `images/_backup_photos_2026-03-21/`)
+- Deploy updated assets to `public_html`; ignore `images/_new_batch/` (unzipped source photos)
+- Document hero video assets in README
+
 ## [1.5.4] - 2026-03-21
 
 - Sync `public_html` with repo (`script.js`, `index.html`, `styles.css`) so desktop header scroll fade runs on the live site

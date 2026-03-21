@@ -6,7 +6,6 @@
   var header = document.querySelector(".site-header");
   var toggle = document.querySelector(".nav-toggle");
   var navOverlay = document.querySelector(".nav-overlay");
-  var heroBg = document.querySelector(".hero__parallax");
 
   var HEADER_FADE_DISTANCE = 220;
   var mqWideNav = window.matchMedia("(min-width: 1024px)");
@@ -34,11 +33,6 @@
       }
     }
 
-    if (heroBg) {
-      var max = 400;
-      var p = Math.min(y / max, 1);
-      heroBg.style.transform = "translate3d(0, " + (p * 48).toFixed(1) + "px, 0) scale(1.05)";
-    }
   }
 
   window.addEventListener("scroll", updateHeaderScroll, { passive: true });

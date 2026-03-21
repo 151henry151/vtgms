@@ -3,3 +3,5 @@ Thumbs.db
 *.log
 images/uploads/*
 !images/uploads/.gitkeep
+images/_new_batch/
+images/_backup_photos_2026-03-21/
