@@ -5,6 +5,15 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.8] - 2026-03-21
+
+- Remove sliding-scale / Vermont programs paragraphs from the “How We'll Build This Together” section
+
+## [1.6.7] - 2026-03-07
+
+- Link hero lead to `#wishlist-land`; retitle wishlist eyebrow to “How you can help” and refresh intro copy about helping before land is found
+- Place “And above all: land” block directly under “What We Need Right Now”; add `scroll-margin-top` for the land anchor and hero lead link styling
+
 ## [1.6.6] - 2026-03-07
 
 - On viewports under 768px, set `.hero__bg img` `object-position` to `87.5% top` (three-quarters of the way from centered to right-aligned under `object-fit: cover`)

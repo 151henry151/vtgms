@@ -371,6 +371,18 @@ a:hover {
   line-height: 1.75;
 }
 
+.hero__lead a {
+  color: var(--color-gold);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+.hero__lead a:hover {
+  color: #e8c96b;
+}
+
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
@@ -1038,6 +1050,14 @@ a:hover {
   margin: 0 0 0.75rem;
   font-weight: 600;
   color: var(--color-forest);
+}
+
+.wishlist-section > .section__inner > header + .wishlist-land {
+  margin-top: 1.25rem;
+}
+
+#wishlist-land {
+  scroll-margin-top: calc(var(--header-h, 64px) + 1rem);
 }
 
 .wishlist-land {
