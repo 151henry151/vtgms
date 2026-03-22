@@ -310,7 +310,7 @@ a:hover {
   object-position: center top;
 }
 
-/* Narrow viewports: fill hero height; anchor to top-right so the image’s right edge meets the container */
+/* Narrow viewports: fill hero height; horizontal focus ~75% of the way from center (50%) to right edge (100%) */
 @media (max-width: 767px) {
   .hero__bg {
     align-items: stretch;
@@ -318,7 +318,7 @@ a:hover {
 
   .hero__bg img {
     object-fit: cover;
-    object-position: right top;
+    object-position: 87.5% top;
   }
 }
 
