@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.1] - 2026-03-21
+
+- Add `AGENTS.md` documenting submodule workflow with `my-webserver-setup`; link it from `README.md`
+
 ## [1.6.0] - 2026-03-21
 
 - Merge copy and UI from server deploy work: Gateway food-shelf and Hearth intergenerational lines, ideal land list, nonprofit footer line, Legal/Finance form options, materials CTA on pole-barn build card, permaculture diagram and `food-forest__photo` frame, remove financial role-card emoji

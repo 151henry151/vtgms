@@ -4,6 +4,8 @@ Static site source for **Vermont Green Mountain Sanctuary** — a community-led 
 
 Deploy the contents of this repository (or build output) to the web root for [vtgms.org](https://vtgms.org/).
 
+**Development workflow:** this repo is the canonical site source; production is often wired via the **`my-webserver-setup`** submodule at `domains/org/vtgms.org/public_html`. See **[AGENTS.md](AGENTS.md)** for day-to-day Git steps (edit here → bump submodule → `git submodule update` on the host).
+
 ## Contents
 
 - `index.html` — main page
