@@ -635,6 +635,63 @@ a:hover {
   color: var(--color-moss);
 }
 
+.land-ideal__heading {
+  margin: 1.25rem 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-forest);
+}
+
+.land-ideal-list {
+  margin: 0 0 0.5rem;
+  padding-left: 1.35rem;
+  max-width: 40rem;
+  color: var(--color-slate);
+}
+
+.land-ideal-list li {
+  margin-bottom: 0.35rem;
+}
+
+.permaculture-stack {
+  margin: 2rem 0 0.5rem;
+  padding: 0;
+}
+
+.permaculture-stack__caption {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-forest);
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.permaculture-stack__svg-wrap {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+  background: linear-gradient(180deg, rgba(245, 240, 232, 0.9) 0%, rgba(237, 232, 222, 0.95) 100%);
+  border: 1px solid rgba(45, 74, 45, 0.12);
+}
+
+.permaculture-stack__svg {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.permaculture-stack__label {
+  font-family: var(--font-body);
+}
+
+.permaculture-stack__label--strong {
+  font-weight: 700;
+}
+
 .food-forest__row {
   display: grid;
   gap: 1.5rem;
@@ -648,9 +705,44 @@ a:hover {
   }
 }
 
-.food-forest__row img {
+.food-forest__photo {
+  margin: 0;
+  width: 100%;
+  min-height: clamp(22rem, 52vh, 42rem);
   border-radius: var(--radius);
   box-shadow: var(--shadow-card);
+  background: rgba(45, 74, 45, 0.07);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  box-sizing: border-box;
+}
+
+.food-forest__photo img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: clamp(26rem, 62vh, 48rem);
+  object-fit: contain;
+  object-position: center center;
+}
+
+.build-card__sourcing a {
+  display: inline;
+  font-weight: 600;
+  white-space: normal;
+}
+
+.footer__nonprofit {
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-stone);
+  max-width: 36rem;
+  margin: 0.75rem auto 0;
+  text-align: center;
+  opacity: 0.9;
 }
 
 .pullquote {

@@ -5,6 +5,12 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.0] - 2026-03-21
+
+- Merge copy and UI from server deploy work: Gateway food-shelf and Hearth intergenerational lines, ideal land list, nonprofit footer line, Legal/Finance form options, materials CTA on pole-barn build card, permaculture diagram and `food-forest__photo` frame, remove financial role-card emoji
+- Fix duplicated `</html>` fragment at end of `index.html`
+- Sync `images/` and `.well-known/acme-challenge/` with production assets; keep covenant, zones gallery, build, funding, and wishlist photos in page markup
+
 ## [1.5.13] - 2026-03-21
 
 - Remove Front Porch Forum copy-ready block from Get Involved; keep text in `docs/front-porch-forum-post.txt`
