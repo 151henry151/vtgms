@@ -310,6 +310,18 @@ a:hover {
   object-position: center top;
 }
 
+/* Narrow viewports: fill hero height, center crop (avoid short letterboxed strip from width-first contain) */
+@media (max-width: 767px) {
+  .hero__bg {
+    align-items: stretch;
+  }
+
+  .hero__bg img {
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
 .hero__overlay {
   position: absolute;
   inset: 0;

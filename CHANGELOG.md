@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.4] - 2026-03-07
+
+- Use `object-fit: cover` and centered positioning for `.hero__bg img` below 768px so the top photo fills vertical space on mobile; keep `contain` + top alignment from 768px up
+
 ## [1.6.3] - 2026-03-07
 
 - Clip `.food-forest__photo` with `overflow: hidden` and round `herbs-garden` image corners via `border-radius` on the `img` (parent radius alone does not round a centered, intrinsic-width photo)
