@@ -5,6 +5,13 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.3] - 2026-03-07
+
+- Clip `.food-forest__photo` with `overflow: hidden` and round `herbs-garden` image corners via `border-radius` on the `img` (parent radius alone does not round a centered, intrinsic-width photo)
+- Remove footer photo-credits paragraph from `index.html`
+- Start nonprofit disclosure with "Vermont Green Mountain Sanctuary" in `index.html`
+- Drop outdated footer credit note from `README.md` License section
+
 ## [1.6.1] - 2026-03-21
 
 - Add `AGENTS.md` documenting submodule workflow with `my-webserver-setup`; link it from `README.md`

@@ -18,4 +18,4 @@ Note: on the production host, a copy of `docs/front-porch-forum-post.txt` may al
 
 ## License
 
-Site text and structure: project stewards. Image credits appear in the page footer.
+Site text and structure: project stewards.
