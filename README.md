@@ -13,7 +13,7 @@ npm install
 npm run dev
 ```
 
-Then use the URL BrowserSync prints (defaults to `http://localhost:8080/`). Keep that tab open while you edit; saving a watched file triggers a full page reload. Stop the server with Ctrl+C.
+Then use the URL BrowserSync prints (defaults to `http://localhost:8080/`). Keep that tab open while you edit; saving `index.html`, root-level CSS/JS, or files under `images/` triggers a reload. Stop the server with Ctrl+C.
 
 ## Contents
 

@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.12] - 2026-04-06
+
+- Replace “Council” with “Guild” in hero CTA, involved section headings, form submit label, and mailto subject line; rename form id from `council-form` to `guild-form` in `index.html` and `script.js`
+
+## [1.6.11] - 2026-04-06
+
+- Watch root-level `index.html` and `*.{html,css,js}` in `npm run dev` so glob patterns like `**/*.{html,css,js}` alone (which omit files at the repo root) do not skip `index.html`
+
 ## [1.6.10] - 2026-04-06
 
 - Replace `live-server` with `browser-sync` for `npm run dev` so the live-reload client is injected when the browser sends an `Origin` header; document BrowserSync in `README.md`

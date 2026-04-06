@@ -104,8 +104,8 @@
     var intent = sessionStorage.getItem(FORM_INTENT_KEY);
     if (!intent) return;
     sessionStorage.removeItem(FORM_INTENT_KEY);
-    var councilForm = document.getElementById("council-form");
-    if (!councilForm) return;
+    var guildForm = document.getElementById("guild-form");
+    if (!guildForm) return;
     if (intent === "land") {
       var landCb = document.getElementById("f-role-land");
       if (landCb) landCb.checked = true;
@@ -113,7 +113,7 @@
       var matCb = document.getElementById("f-role-materials");
       if (matCb) matCb.checked = true;
     }
-    councilForm.scrollIntoView({ behavior: "smooth", block: "start" });
+    guildForm.scrollIntoView({ behavior: "smooth", block: "start" });
     var nameField = document.getElementById("f-name");
     if (nameField && document.activeElement !== nameField) {
       setTimeout(function () {
@@ -144,7 +144,7 @@
     applyFormIntent();
   }
 
-  var form = document.getElementById("council-form");
+  var form = document.getElementById("guild-form");
   if (form) {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -160,7 +160,7 @@
         "Email: " + email.trim() + "\n" +
         "How I want to get involved: " + (roles.length ? roles.join(", ") : "(none selected)") + "\n\n" +
         "Message:\n" + msg.trim();
-      var subject = "Join the Council — Vermont Green Mountain Sanctuary";
+      var subject = "Join the Guild — Vermont Green Mountain Sanctuary";
       window.location.href =
         "mailto:JY_Blair@hotmail.com?subject=" +
         encodeURIComponent(subject) +
