@@ -5,6 +5,58 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.25] - 2026-04-06
+
+- Remove the two `.pullquote` lines (food forest and children sections), drop `.pullquote` styles, and add `.food-forest__row--single` so the herbs photo row stays full width without a second column
+
+## [1.6.24] - 2026-04-06
+
+- Nudge `.hero h1` font size clamp slightly smaller again
+
+## [1.6.23] - 2026-04-06
+
+- Reduce `.hero h1` font size clamp and slightly increase line-height so the longer hero headline fits better
+
+## [1.6.22] - 2026-04-06
+
+- Move the vision blockquote into the hero `h1` in place of “Where Food, Healing, and Community Take Root”; make the vision section a single-column grid and drop unused `.vision-quote` styles; widen hero inner max-width slightly for the longer headline; align `og:description` with the new hero line
+
+## [1.6.21] - 2026-04-06
+
+- Shorten the Gateway / Pole Barn and Kitchen zone card by removing the barn-raising and donated-materials clause
+
+## [1.6.20] - 2026-04-06
+
+- Remove the closing sentence about stone from the site from the Silence / Medicine Wheel and Earth Altar zone card
+
+## [1.6.19] - 2026-04-06
+
+- Shorten the Hearth / Children’s Sensory Woods zone copy: drop the elders / land-tending clause and begin the remaining sentence with “Learning”
+
+## [1.6.18] - 2026-04-06
+
+- Remove “ — seasons and soil first.” from the Hearth / Children’s Sensory Woods zone copy
+
+## [1.6.17] - 2026-04-06
+
+- Remove the walipini sentence from the Mid-Forest / Food Forest Canopy zone
+
+## [1.6.16] - 2026-04-06
+
+- Remove the Gateway zone sentence about surplus harvests, food shelf donation, and community need
+
+## [1.6.15] - 2026-04-06
+
+- Extend the Mid-Forest / Food Forest Canopy zone copy with a walipini (bermed passive-solar greenhouse) for season extension
+
+## [1.6.14] - 2026-04-06
+
+- Tighten the “Natural building materials” wishlist: shorter lead and bullets with less parenthetical detail
+
+## [1.6.13] - 2026-04-06
+
+- Shorten the “Plants & seeds” wishlist to category labels only: keep the lead line and each bullet’s first segment (before the em dash), remove the comma-separated plant lists and the willow parenthetical
+
 ## [1.6.12] - 2026-04-06
 
 - Replace “Council” with “Guild” in hero CTA, involved section headings, form submit label, and mailto subject line; rename form id from `council-form` to `guild-form` in `index.html` and `script.js`

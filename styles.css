@@ -338,7 +338,7 @@ a:hover {
   position: relative;
   z-index: 2;
   text-align: center;
-  max-width: 46rem;
+  max-width: min(52rem, 100%);
   color: var(--color-cream);
 }
 
@@ -356,8 +356,8 @@ a:hover {
 .hero h1 {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: clamp(2rem, 6vw, 3.25rem);
-  line-height: 1.12;
+  font-size: clamp(1.25rem, 3.2vw, 2rem);
+  line-height: 1.22;
   margin: 0 0 1.25rem;
   letter-spacing: -0.02em;
   text-wrap: balance;
@@ -528,16 +528,8 @@ a:hover {
   }
 }
 
-.vision-quote {
-  font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
-  font-style: italic;
-  font-weight: 500;
-  line-height: 1.45;
-  color: var(--color-forest);
-  margin: 0;
-  padding-left: 1.25rem;
-  border-left: 4px solid var(--color-clay);
+.vision-grid--single {
+  grid-template-columns: 1fr;
 }
 
 .vision-body p {
@@ -727,6 +719,10 @@ a:hover {
   .food-forest__row {
     grid-template-columns: 1fr 1fr;
   }
+
+  .food-forest__row--single {
+    grid-template-columns: 1fr;
+  }
 }
 
 .food-forest__photo {
@@ -770,15 +766,6 @@ a:hover {
   margin: 0.75rem auto 0;
   text-align: center;
   opacity: 0.9;
-}
-
-.pullquote {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  font-style: italic;
-  color: var(--color-earth);
-  margin: 1rem 0 0;
-  line-height: 1.5;
 }
 
 /* Healing grid */
