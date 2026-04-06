@@ -6,6 +6,15 @@ Deploy the contents of this repository (or build output) to the web root for [vt
 
 **Development workflow:** this repo is the canonical site source; production is often wired via the **`my-webserver-setup`** submodule at `domains/org/vtgms.org/public_html`. See **[AGENTS.md](AGENTS.md)** for day-to-day Git steps (edit here → bump submodule → `git submodule update` on the host).
 
+**Local preview with live reload:** open the site from a dev server so the browser refreshes when you save `index.html`, CSS, or JS (opening `index.html` as a `file://` URL cannot auto-reload). This project uses [BrowserSync](https://browsersync.io/) (`npm run dev`).
+
+```bash
+npm install
+npm run dev
+```
+
+Then use the URL BrowserSync prints (defaults to `http://localhost:8080/`). Keep that tab open while you edit; saving a watched file triggers a full page reload. Stop the server with Ctrl+C.
+
 ## Contents
 
 - `index.html` — main page

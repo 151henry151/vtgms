@@ -1,0 +1,11 @@
+{
+  "name": "vtgms",
+  "private": true,
+  "description": "vtgms.org static site — dev dependencies for local preview only",
+  "scripts": {
+    "dev": "browser-sync start -s . --listen 127.0.0.1 --port 8080 --files \"**/*.{html,css,js}\" --files \"images/**\" --ignore \"node_modules\" --ignore \".git\" --no-notify --no-ui --open local"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.4"
+  }
+}

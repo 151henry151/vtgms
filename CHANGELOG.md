@@ -5,6 +5,14 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.10] - 2026-04-06
+
+- Replace `live-server` with `browser-sync` for `npm run dev` so the live-reload client is injected when the browser sends an `Origin` header; document BrowserSync in `README.md`
+
+## [1.6.9] - 2026-04-06
+
+- Add `package.json` with `live-server` and `npm run dev` for local HTTP preview with automatic browser reload on file changes; document the workflow in `README.md`
+
 ## [1.6.8] - 2026-03-21
 
 - Remove sliding-scale / Vermont programs paragraphs from the “How We'll Build This Together” section
