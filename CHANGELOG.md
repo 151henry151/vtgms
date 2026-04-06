@@ -5,6 +5,10 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.26] - 2026-04-06
+
+- In the healing “open platform” paragraph, say “plant medicine” instead of “herbs” in the practitioners list
+
 ## [1.6.25] - 2026-04-06
 
 - Remove the two `.pullquote` lines (food forest and children sections), drop `.pullquote` styles, and add `.food-forest__row--single` so the herbs photo row stays full width without a second column
