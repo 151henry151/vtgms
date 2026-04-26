@@ -800,6 +800,27 @@ a:hover {
   font-size: 0.95rem;
 }
 
+.healing-callout {
+  margin: 2rem auto 0;
+  max-width: 44rem;
+  padding: 1.35rem 1.5rem;
+  border: 1px solid rgba(245, 240, 232, 0.28);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+}
+
+.healing-callout p {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.05rem, 2.1vw, 1.25rem);
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.65;
+  color: rgba(245, 240, 232, 0.98);
+  text-wrap: balance;
+}
+
 .healing-split {
   display: grid;
   gap: 1rem;
@@ -1589,11 +1610,6 @@ a:hover {
 }
 
 .reveal--visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-  transition: opacity 0.7s ease, transform 0.7s ease;
-}.reveal--visible {
   opacity: 1;
   transform: translateY(0);
 }
